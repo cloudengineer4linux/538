@@ -1,0 +1,16 @@
+runtime: python37
+service: python-redis
+entrypoint: gunicorn -b :$PORT main:app
+
+env_variables:
+  REDISHOST: 'redis.cloud.engineer.example'
+  REDISPORT: '6379'
+
+vpc_access_connector:
+  name: 'projects/associate-cloud-engineer2/locations/us-central1/connectors/redis'
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: auto
