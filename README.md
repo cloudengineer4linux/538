@@ -1,4 +1,4 @@
-Laboratório 537 - GCP Cloud Engineer
+Laboratório 538 - Kubernetes In Cloud
 =============================
 
 Repositório para armazenar o Laboratório do curso 538 - Kubernetes In Cloud da [4Linux][1]
