@@ -1,7 +1,7 @@
 Laboratório 537 - GCP Cloud Engineer
 =============================
 
-Repositório para armazenar o Laboratório do curso 537 - GCP Cloud Engineer da [4Linux][1]
+Repositório para armazenar o Laboratório do curso 538 - Kubernetes In Cloud da [4Linux][1]
 
 Dependências
 ------------
@@ -25,7 +25,7 @@ Nesse laboratório, que está centralizado no arquivo [Vagrantfile][7], sera cri
 
 Nome       | vCPUs | Memoria RAM | IP            | S.O.¹           
 ---------- |:-----:|:-----------:|:-------------:|:---------------:
-gcloud-client     | 1     | 1024MB | 172.16.0.200 | ubuntu-20.04-amd64
+kubectl-client     | 1     | 1024MB | 172.16.0.200 | ubuntu-20.04-amd64
 
 > **¹**: Esse Sistema operacional esta sendo utilizado no formato de Boxes, é a forma como o vagrant chama as imagens do sistema operacional utilizado.
 
