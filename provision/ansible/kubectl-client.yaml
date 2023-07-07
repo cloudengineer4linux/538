@@ -2,7 +2,7 @@
 - hosts: all
   vars:
     sudoers:
-      - suporte-gcp
+      - analista
   become: yes
   become_user: root
   become_method: sudo
@@ -12,11 +12,11 @@
         path: /etc/hosts
         line: "{{ item }}"
       with_items:
-        - 172.16.0.200 gcloud-client
+        - 172.16.0.200 kubectl-client
 
-    - name: Adiciona o usuario suporte-gcp
+    - name: Adiciona o usuario analista
       user:
-        name: suporte-gcp
+        name: analista
         shell: /bin/bash
         password : $1$QbUARykG$p2nthVG8AkDvabKPHwboa1
 
@@ -25,7 +25,7 @@
         path: /etc/sudoers
         line: "{{ item }}"
       with_items:
-        - 'suporte-gcp ALL=(ALL) NOPASSWD: ALL'
+        - 'analista ALL=(ALL) NOPASSWD: ALL'
 
     - name: Configura o servidor SSH para permitir conexao por senha
       ansible.builtin.replace:
