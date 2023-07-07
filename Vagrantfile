@@ -4,7 +4,7 @@
 VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
 
 vms = {
-  'gcloud-client' => {'memory' => '1024', 'cpus' => 1, 'ip' => '200', 'box' => 'devopsbox/ubuntu-20.04', 'provision' => 'provision/ansible/gcloud-client.yaml'},
+  'kubectl-client' => {'memory' => '1024', 'cpus' => 1, 'ip' => '200', 'box' => 'devopsbox/ubuntu-20.04', 'provision' => 'provision/ansible/kubectl-client.yaml'},
 }
 
 Vagrant.configure('2') do |config|
