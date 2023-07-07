@@ -1,10 +1,10 @@
 #!/bin/bash
 ### vars.sh ####
-USER1='suporte-gcp'
+USER1='analista'
 PASS='4linux'
 
 function AdicionarUsuarios {
-# Criando e adicionando aos sudoers o usuário suporte-gcp
+# Criando e adicionando aos sudoers o usuário analista
 useradd -m -d "/home/${USER1}" -p $(openssl passwd -1 ${PASS}) -s /bin/bash ${USER1}
 sed 's|vagrant|'"${USER1}"'|g' /etc/sudoers.d/vagrant > /etc/sudoers.d/${USER1}
 }
